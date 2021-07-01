@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/shared.css" />
+	<title>Flexbox</title>
+</head>
+<style>
+	ul#flex-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	ul li {
+		width: 100px;
+	}
+
+	ul li:nth-child(2) {
+		flex-basis: 60%;
+		/* default is auto | similar to min-width: 60% */
+	}
+
+	ul li:nth-child(4) {
+		flex-basis: 90%;
+	}
+
+	/* example with media query */
+	@media screen and (max-width: 600px) {
+		ul#flex-container {
+			justify-content: center;
+		}
+
+		ul li,
+		ul li:nth-child(2) { /* extra selector to avoid usage of !important */ 
+			flex-basis: 90%;
+		}
+	}
+
+</style>
+
+<body>
+	<div id="container">
+		<h1>[item] Flex basis (default size, as [min-]width) + media query (main axis)</h1>
+		<ul id="flex-container">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+</body>
+
+</html>

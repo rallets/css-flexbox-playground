@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/shared.css" />
+	<title>Flexbox</title>
+</head>
+<style>
+	#container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#container > iframe {
+		height: 400px;
+		flex-basis: 99%; /* similar to min-width: 99%, but uses flexbox */
+		border: 1px solid red;
+	}
+
+</style>
+
+<body>
+	<div id="container">
+		<iframe src="./01-flex.html" ></iframe>
+		<iframe src="./02-flex-grow.html"></iframe>
+		<iframe src="./02b-flex-shrink.html"></iframe>
+		<iframe src="./03-order.html"></iframe>
+		<iframe src="./04-flex-direction.html"></iframe>
+		<iframe src="./05-flex-wrap.html"></iframe>
+		<iframe src="./06-flex-grow-wrap.html"></iframe>
+		<iframe src="./07-flex-align-items.html"></iframe>
+		<iframe src="./10-flex-align-content.html"></iframe>
+		<iframe src="./08-flex-align-self.html"></iframe>
+		<iframe src="./09-flex-justify-content.html"></iframe>
+		<iframe src="./11-flex-basis.html"></iframe>
+	</div>
+</body>
+
+</html>
