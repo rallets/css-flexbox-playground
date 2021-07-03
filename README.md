@@ -14,6 +14,6 @@ Based on the [Pluralsight course](https://app.pluralsight.com/library/courses/cs
 
 ## 02 | Flexbox properties in practice
 
-A flexbox property in action for file, to easily understand how exactly a property effects a flexbox item/container, both for main axis and cross axis.
+A flexbox property for each file, to easily understand how exactly a property effects a flexbox item/container, both for main axis and cross axis.
 
-- [examples](./src/examples/index.html): Flexbox properties examples.
+- [examples](./src/03-flexgrid-examples/index.html): Flexbox properties examples.
