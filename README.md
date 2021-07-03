@@ -16,4 +16,6 @@ Based on the [Pluralsight course](https://app.pluralsight.com/library/courses/cs
 
 A flexbox property for each file, to easily understand how exactly a property effects a flexbox item/container, both for main axis and cross axis.
 
+Just clone the repo and open the `index.html` file to see in action each property.
+
 - [examples](./src/03-flexgrid-examples/index.html): Flexbox properties examples.
